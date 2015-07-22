@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="POST">
+            <label>title</label>
+            <input type="text" name='title' value='{{ challenge_point.title }}'>
+            <label>key</label>
+            <input type="text" name="key" value='{{ challenge_point.key }}'>
+            <label>done</label>
+            <input type="text" name = 'done' value="{{ challenge_point.done }}">
+            <label>required_time</label>
+            <input type='text' name = 'required_time' value="{{ challenge_point.required_time }}">
+            <input type="submit" value="Save">
+    </form>
+{% end %}

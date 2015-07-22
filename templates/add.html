@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="POST">
+        <label>header</label>
+        <input type="text" name='header'>
+        <label>url</label>
+        <input type="text" name="url">
+        <label>date_start</label>
+        <input type="text" name = 'date_start'>
+        <label>date_end</label>
+        <input type='text' name = 'date_end'>
+        <ul id = 'one_challenge_point'>
+            <li><label>title</label></li>
+            <li><input type="text" name='title' ></li>
+            <li><label>key</label></li>
+            <li><input type="text" name="key" ></li>
+            <li><label>done</label></li>
+            <li><input type="text" name = 'done' ></li>
+            <li><label>required_time</label></li>
+            <li><input type='text' name = 'required_time' ></li>
+        </ul>
+        <input type="submit" value="Save">
+    </form>
+{% end %}

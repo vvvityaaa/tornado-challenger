@@ -1,0 +1,15 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+#greeting {
+	font-size:25px;
+}
+#header_photo {
+	margin-top:15px;
+}
+#scheme_photo{
+	float:right;
+	margin-left:100px;
+}

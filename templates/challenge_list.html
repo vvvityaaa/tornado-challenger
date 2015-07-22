@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div style='display:block;'><a class='btn' href='/add'>Add new Challenge</a></div>
+    {% for challenge in challenges %}
+    <div class='challenge'>
+        <a href='/challenges/{{ challenge.url }}'>
+        <h3> {{ challenge['header'] }} {{ challenge['date_start'] }} - {{ challenge['date_end'] }}</h3>
+        {% for point in challenge.points[:3] %}
+            <p>{{ point.title }} {{ point.required_time }} {{ point.done }}</p>
+        {% end %}
+            </a>
+        <a class='btn' href='/edit/{{ challenge.url }}'>Edit</a>
+    </div>
+    {% end %}
+{% end %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2 id = 'header'><span id='header_span'>{{ challenge.header }}</span> <span id='date_span'>({{challenge.date_start }} - {{ challenge.date_end }})</span></h2>
+    <table id='challenge_table'>
+    {% for point in challenge.points %}
+        <tr>
+            <td>{{ point.title }}</td>
+            <td><a href='/edit_point/{{ challenge.url }}x{{ point.key }}'>Edit</a></td>
+            <td>{{ point.required_time }}</td>
+            <td>{{ point.done }}</td>
+        </tr>
+    {% end %}
+    </table>
+    <a href='/add_point/{{ challenge.url }}'>Add point</a>
+{% end %}

@@ -1,0 +1,54 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+#greeting {
+	font-size:25px;
+}
+#header_photo {
+	margin-top:30px;
+}
+#scheme_photo{
+	float:right;
+	margin-left:100px;
+}
+.challenge {
+    display:inline-block;
+    background-color:rgba(227, 227, 227, 1);
+    margin:20px 20px 20px 20px;
+    padding: 30px;
+    border-radius:10px;
+}
+.challenge a{
+    color:#000;
+    text-decoration: none;
+}
+.challenge:hover, .challenge a:hover {
+    background-color:rgba(135, 135, 135, 1);
+    color:#fff;
+    text-decoration:none;
+}
+#header {
+    text-align: center;
+}
+#header_span {
+    color:rgba(122, 122, 122, 1);
+}
+#date_span {
+    font-style: italic;
+    font-size:18px;
+}
+#challenge_table {
+    margin:30px 0px 30px 20px;
+    font-size:20px;
+    font-family:Verdana,sans-serif;
+}
+table,th,td,tr {
+    border: 2px solid #000;
+    width:90%;
+    padding:5px;
+}
+footer {
+    text-align: center;
+}

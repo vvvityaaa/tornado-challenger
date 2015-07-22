@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="POST">
+        <label>header</label>
+        <input type="text" name='header' value='{{ challenge.header }}'>
+        <label>url</label>
+        <input type="text" name="url" value='{{ challenge.url }}'>
+        <label>date_start</label>
+        <input type="text" name = 'date_start' value="{{ challenge.date_start }}">
+        <label>date_end</label>
+        <input type='text' name = 'date_end' value="{{ challenge.date_end }}">
+        <input type="submit" value="Save">
+    </form>
+{% end %}

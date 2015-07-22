@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="POST">
+        <label>title</label>
+        <input type="text" name='title' >
+        <label>key</label>
+        <input type="text" name="key" >
+        <label>done</label>
+        <input type="text" name = 'done' >
+        <label>required_time</label>
+        <input type='text' name = 'required_time' >
+        <input type="submit" value="Save">
+    </form>
+{% end %}
