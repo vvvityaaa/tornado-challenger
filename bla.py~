@@ -1,7 +1,0 @@
-import mongoengine as m
-m.connect('challenger')
-from models import Challenge, ChallengePoint
-challengepoint1_1 = ChallengePoint(title='Programm',required_time = 300, done=False)
-challengepoint1_2 = ChallengePoint(title='Fork some project and fix it',required_time = 200, done=False)
-challenge = Challenge(header = 'First challenge',date_start = datetime.now(),date_end = datetime.now(), points = [challengepoint1_1,challengepoint1_2])
-challenge = Challenge(header = 'First challenge',date_start = datetime.now(),date_end = datetime.now(), points = [challengepoint1_1,challengepoint1_2], url='firstChallenge')
