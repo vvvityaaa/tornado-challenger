@@ -11,7 +11,8 @@ determine how much time you need to do that and save it. It works like to-do lis
 
 This project is written in pure Tornado, as database MongoDB and drive mongoengine are used.
 
-To install this software on Linux: 
+To install this software on Linux:
+- most important thing: you need to put this software into virtualenv with python3 distribution, to do this enter following commands : sudo apt-get install python-virtualenv; virtualenv --no-packages --distributive -p /ust/local/lib/python3.4 <name_of_virtualenv>; then out all the files into this folder and activate virtualenv, entering in virtualenv folder command source bin/activate; then follow next steps;
 - install MongoDB http://docs.mongodb.org/manual/administration/install-on-linux/   - choose your Linux system and follow steps;
 - install requirements.txt with command pip install -r requirements.txt (of course you need to have python3 and pip3 pre installed on your os);
 - after installing MongoDB run file db.py, which will create database on your system;
