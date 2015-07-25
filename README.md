@@ -10,3 +10,10 @@ during this challenge, for instance Read som book about Tornado and create some 
 determine how much time you need to do that and save it. It works like to-do list.
 
 This project is written in pure Tornado, as database MongoDB and drive mongoengine are used.
+
+To install this software on Linux: 
+- install MongoDB http://docs.mongodb.org/manual/administration/install-on-linux/   - choose your Linux system and follow steps;
+- install requirements.txt with command pip install -r requirements.txt (of course you need to have python3 and pip3 pre installed on your os);
+- after installing MongoDB run file db.py, which will create database on your system;
+- in the directory of your project run command python challenge_manager.py;
+- everything has to work, if previous steps were fulfilled properly, now enter following url in your browser http://127.0.0.1:8000, you should see home page of the project;
