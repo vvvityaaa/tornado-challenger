@@ -1,24 +1,51 @@
 {% extends 'base.html' %}
 {% block body %}
-    <form method="POST">
-        <label>header</label>
-        <input type="text" name='header'>
-        <label>url</label>
-        <input type="text" name="url">
-        <label>date_start</label>
-        <input type="text" name = 'date_start'>
-        <label>date_end</label>
-        <input type='text' name = 'date_end'>
-        <ul id = 'one_challenge_point'>
-            <li><label>title</label></li>
-            <li><input type="text" name='title' ></li>
-            <li><label>key</label></li>
-            <li><input type="text" name="key" ></li>
-            <li><label>done</label></li>
-            <li><input type="text" name = 'done' ></li>
-            <li><label>required_time</label></li>
-            <li><input type='text' name = 'required_time' ></li>
-        </ul>
-        <input type="submit" value="Save">
-    </form>
+<form class="form-style-7" method="POST">
+<ul>
+<li>
+    <label for="name">header</label>
+    <input type="text" name="name" maxlength="100">
+    <span>Enter a header here</span>
+</li>
+<li>
+    <label for="url">url</label>
+    <input type="text" name="url" maxlength="100">
+    <span>Enter a valid url address</span>
+</li>
+<li>
+    <label for="date_start">date start</label>
+    <input type="text" name="date_start" maxlength="100">
+    <span>Write start date of challenge</span>
+</li>
+<li>
+    <label for="date_end">date end</label>
+    <input type="text" name="date_end" maxlength="100">
+    <span>Write end date of challenge</span>
+</li>
+<li>
+    <label>title</label>
+    <input type="text" name='title'>
+    <span>Enter a title of your challenge</span>
+</li>
+<li>
+    <label>key</label>
+    <input type="text" name="key" >
+    <span>Enter a key for database</span>
+</li>
+<li>
+    <label>done</label>
+    <input type="radio" name = 'done' value="true">True<br>
+    <input type="radio" name="done" value="false">False<br>
+    <span>Check if challenge is done or not</span>
+</li>
+<li>
+    <label>required_time</label>
+    <input type='text' name = 'required_time' >
+    <span>Estimate time you need for challenge</span>
+</li>
+<li>
+    <input type="submit" value="Send This" >
+</li>
+</ul>
+</form>
 {% end %}

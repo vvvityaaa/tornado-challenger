@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% block body %}
-    <div style='display:block;'><a class='btn' href='/add'>Add new Challenge</a></div>
     {% for challenge in challenges %}
     <div class='challenge'>
         <a href='/challenges/{{ challenge.url }}'>
@@ -9,7 +8,8 @@
             <p>{{ point.title }} {{ point.required_time }} {{ point.done }}</p>
         {% end %}
             </a>
-        <a class='btn' href='/edit/{{ challenge.url }}'>Edit</a>
+        <a class='btn' href='/edit/{{ challenge.url }}'><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>Edit</a>
     </div>
     {% end %}
+    <div id='new-challenge'><a href='/add'><i class="fa fa-plus-square fa-3x" aria-hidden="true"></i>Add new challenge</a></div>
 {% end %}
